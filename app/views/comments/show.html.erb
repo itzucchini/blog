@@ -1,0 +1,17 @@
+<% title "Comment for '#{@post.title}'" %>
+
+<p>
+  <strong>Commenter</strong>
+  <%= h @comment.commenter %>
+</p>
+
+<%= simple_format (@comment.body) %>
+
+<%= render :partial => "comments" %>
+<%= link_to 'Edit', edit_post_path(@post)%>
+
+<%= link_to "Back to post", @post %>
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Destroy', @post, :method => :delete, :confirm => "Are you sure?" %> |
+<%= link_to 'Back', posts_path %>

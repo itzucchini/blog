@@ -1,0 +1,15 @@
+<% title "Comment for '#{@post.title}'" %>
+
+<p>
+  <%= link_to "New comment", new_post_comment_path(@post) %> <!--using rake routes -->
+</p>
+
+<% for comment in @comments do %>
+  <strong>Commenter: </strong>
+  <%= comment.commenter %>
+  <%= simple_format (comment.body)%>
+  <hr /><br />
+<% end %>
+
+
+
