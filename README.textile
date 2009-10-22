@@ -1,0 +1,9 @@
+h1. Rails intensive course blog
+
+The demo blog project developped during the intensive course
+
+h2. What we did
+Created
+Posts
+Comments
+Users
